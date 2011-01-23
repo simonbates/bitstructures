@@ -1,0 +1,19 @@
+{% extends "substructure/base.html" %}
+
+{% block title %}Tagged with: {{ tag.name|escape }}{% endblock %}
+
+{% block content %}
+
+<div class="entry">
+
+<h2>Tagged with: {{ tag.name|escape }}</h2>
+
+<ul>
+{% for entry in entry_list %}
+<li><a href="{{ entry.get_absolute_url }}">{{ entry.title|escape }}</a></li>
+{% endfor %}
+</ul>
+
+</div>
+
+{% endblock %}

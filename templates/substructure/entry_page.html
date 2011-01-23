@@ -1,0 +1,9 @@
+{% extends "substructure/base.html" %}
+
+{% block title %}{{ entry.title|escape }}{% endblock %}
+
+{% block content %}
+
+{% include "substructure/entry.html" %}
+
+{% endblock %}

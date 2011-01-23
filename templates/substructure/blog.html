@@ -1,0 +1,12 @@
+{% extends "substructure/base.html" %}
+
+{% block content %}
+
+{% for entry in entry_list %}
+{% include "substructure/entry.html" %}
+{% endfor %}
+
+<div class="page-nav">{% if previous_page %}<a href="/{% if not previous_page_first_page %}?page={{ previous_page_num }}{% endif %}">&larr; Newer</a>{% else %}&larr; Newer{% endif %}
+| {% if next_page %}<a href="/?page={{ next_page_num }}">Older &rarr;</a>{% else %}Older &rarr;{% endif %}</div>
+
+{% endblock %}

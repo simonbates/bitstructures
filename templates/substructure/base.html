@@ -1,0 +1,67 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<head>
+<title>Bitstructures &mdash; {% block title %}Simon Bates{% endblock %}</title>
+<link rel="alternate" type="application/atom+xml" href="/atom.xml">
+<link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}css/bitstructures.css">
+<meta name="verify-v1" content="qjGEMFFYJif+BENvPizgAchDPVhYTp6AovBD2FIP82s=">
+</head>
+
+<body>
+
+<div id="nameplate-container"><div id="nameplate"><a href="/"><img src="{{ MEDIA_URL }}images/bitstructures4.gif"
+alt="Bitstructures"></a></div></div>
+
+<div id="container">
+
+<div id="content-container">
+<div id="content">
+{% block content %}{% endblock %}
+</div>
+</div>
+
+<div id="info-block-container">
+<div id="info-block">
+
+<div class="info-entry">
+<h2>About me</h2>
+<p>Simon Bates is a software developer living and working in
+Toronto.</p>
+<ul>
+<li><a href="mailto:simon@bitstructures.com">simon@bitstructures.com</a></li>
+<li><a href="http://www.linkedin.com/in/simonjb">My LinkedIn profile</a></li>
+<li><a href="http://del.icio.us/simonbates">del.icio.us/simonbates</a></li>
+</ul>
+</div>
+
+<div class="info-entry">
+<h2>Starting points</h2>
+<ul>
+<li><a href="/tagged-with/accessibility">accessibility</a></li>
+<li><a href="/tagged-with/ajax">ajax</a></li>
+<li><a href="/tagged-with/java">java</a></li>
+<li><a href="/tagged-with/testing">testing</a></li>
+<li><a href="/all">all entries</a> ({{ num_published_entries }})</li>
+</ul>
+</div>
+
+<div class="info-entry">
+<h2>Colophon</h2>
+<p>This blog is running on a Python application that I built with
+<a href="http://www.djangoproject.com/">Django</a>.
+The <a href="http://trac.bitstructures.com/browser/bitstructures/trunk">source
+code</a> is available under the MIT license.</p>
+<p><a href="/atom.xml"><img src="{{ MEDIA_URL }}images/feed-icon-14x14.png" alt="Site feed"> Site feed</a></p>
+</div>
+
+</div>
+</div>
+
+</div>
+
+</body>
+
+</html>

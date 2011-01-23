@@ -1,0 +1,9 @@
+{% load substructure_tags %}<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>{{ site_name|escape }}</title>
+<id>http://{{ site_domain }}/</id>
+<link href="http://{{ site_domain }}/"/>
+<updated>{{ most_recent_date_published|rfc3339 }}</updated>
+<author><name>Simon Bates</name></author>
+{% for entry in entry_list %}{% include "substructure/atom_entry.xml" %}{% endfor %}
+</feed>

@@ -1,0 +1,150 @@
+body {
+	font-family: Arial, sans-serif;
+	font-size: 0.88em;
+	line-height: 1.5;
+	margin: 0;
+	padding: 0;
+}
+
+#nameplate-container {
+	margin: 0;
+	padding: 24px 0 16px 32px;
+	background-color: #ffde00;
+}
+
+#nameplate {
+	height: 20px;
+}
+
+#nameplate a {
+	background: transparent;
+}
+
+a img {
+	border-width: 0;
+}
+
+#container {
+	max-width: 67em;
+}
+
+#content-container {
+	float: left;
+	width: 70%;
+}
+
+#content {
+	padding: 0 32px 48px 32px;
+}
+
+#info-block-container {
+	margin: 0 0 0 70%;
+}
+
+#info-block {
+	padding: 0 32px 0 0;
+}
+
+.entry, .info-entry, .page-nav {
+	padding: 24px 0 0 0;
+}
+
+h2 {
+	font-size: 1.44em;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+	color: #444;
+}
+
+.entry h2 a {
+	text-decoration: none;
+	font-weight: bold;
+	color: #82993d;
+}
+
+.entry h2 a:hover {
+	text-decoration: none;
+	background-color: #82993d;
+	color: white;
+}
+
+.page-nav {
+	font-size: 1.2em;
+	font-weight: bold;
+	margin: 0;
+	color: #777;
+}
+
+p.entry-info {
+	margin-top: 0;
+}
+
+a {
+	font-weight: bold;
+	color: #145ccc;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+ul {
+	margin-left: 0;
+	padding-left: 0;
+	list-style: inside;
+	list-style-type: square;
+}
+
+table, th, td {
+	border-width: 1px;
+	border-style: solid;
+	border-collapse: collapse;
+	border-color: #888;
+}
+
+th, td {
+	text-align: left;
+	padding: 5px;
+}
+
+#drafts ul {
+	margin-left: 0;
+	padding-left: 0;
+	list-style-type: none;
+}
+
+#drafts li {
+	padding-bottom: 6px;
+}
+
+#drafts li a {
+	text-decoration: none;
+}
+
+pre code, pre {
+	font-family: Monaco, "Lucida Console", "Bitstream Vera Sans Mono", "Courier New", monospace;
+	/*font-size: 0.88em;*/
+	background-color: #e8f4ff;
+}
+
+/* rules for Pygments */
+
+.highlight .k, .highlight .nb, .highlight .nt {
+	color: #333;
+	font-weight: bold;
+}
+
+/* for ondemand-js */
+
+#form1, #form1 input, #form1 textarea {
+	border: 1px solid #ccc
+}
+#form1 {
+	padding-left: 10px
+}
+#form1 label {
+	font-weight: bold
+}
+

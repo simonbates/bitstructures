@@ -1,0 +1,10 @@
+{% load django.contrib.markup %}
+{% load substructure_tags %}
+<entry>
+<title>{{ entry.title|escape }}</title>
+<id>http://{{ site_domain }}{{ entry.get_absolute_url }}</id>
+<link href="http://{{ site_domain }}{{ entry.get_absolute_url }}"/>
+<published>{{ entry.date_published|rfc3339 }}</published>
+<updated>{{ entry.date_published|rfc3339 }}</updated>
+<content type="html">{{ entry.text|markdown|escape }}</content>
+</entry>
